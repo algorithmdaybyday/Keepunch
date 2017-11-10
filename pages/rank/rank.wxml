@@ -1,0 +1,15 @@
+<view class="page">
+  <view class="main">
+    <view class="page__hd">
+      <view class="page__title">Rank</view>
+      <view class="page__desc">排名</view>
+    </view>
+    <view class="cells">
+      <view wx:for="{{users}}" wx:for-item="user" class="cell">
+        <image class="cell__primary" src="{{user.avatarUrl}}"></image>
+        <text class="cell__bd">{{user.nickName}}</text>
+        <text class="cell__ft">{{user.times}} times</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,49 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true
+	},
+	"compileType": "weapp",
+	"libVersion": "1.1.1",
+	"appid": "wxca72f83dd031712b",
+	"projectname": "Algorithm_day_by_day",
+	"condition": {
+		"weapp": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "rank",
+					"pathName": "pages/rank/rank",
+					"query": "",
+					"scene": "1044"
+				},
+				{
+					"id": 1,
+					"name": "success",
+					"pathName": "pages/check/check",
+					"query": "",
+					"scene": "1044"
+				},
+				{
+					"id": -1,
+					"name": "check",
+					"pathName": "pages/check/check",
+					"query": "",
+					"scene": "1044"
+				}
+			]
+		},
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		}
+	}
+}

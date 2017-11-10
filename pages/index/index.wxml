@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="page_hd">
+  <view class="card">   
+    <view class="card_title">{{date}}</view>
+    <view class="card_content" style="">{{question_of_the_day.title}}</view>
+  </view>
+  </view>
+  <view class="title">
+    <text>每日一道算法题</text>
+  </view>
+  <view class="info">
+    <text>A problem a day keeps foolishness away</text>
+  </view>
+  <view class="button">
+    <button class="btn" hover-class="btn-hover" disabled="{{checkable===false}}" bindtap="bindCheckTap">前往打卡</button>
+  </view>
+          <view class="extra-area">
+            <view class="footer">
+                <view class="footer__text">Copyright © 2017</view>
+            </view>
+        </view>
+</view>

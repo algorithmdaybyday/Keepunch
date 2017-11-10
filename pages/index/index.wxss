@@ -1,0 +1,89 @@
+/* pages/check/check.wxss */
+
+page {
+  background: #F3F9FE;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin-left:10%;
+  margin-right:10%;
+  width: 80%;
+  flex-direction: column;
+}
+
+.card_date {
+  color:#ddd;  
+  align-self: center;
+  font-size:33rpx;
+}
+
+.card_title {
+  text-align:center;
+  color:#666;
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  width:100%;
+  border-bottom:1px rgba(0, 0, 0, 0.27) solid;
+  font-size:33rpx;
+}
+
+.card_content {
+  font-size: 28rpx;
+  padding-top:20rpx;
+  color:#999;
+  line-height:1.5em;
+  text-align:center;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.page_hd {
+    /* padding: 40px; */
+    height: 450rpx;
+    width:100%;
+    /* background: greenyellow;*/
+}
+
+.header image {
+    height: 808rpx;
+    width: 100%;
+}
+
+.title {
+  line-height: 130rpx;
+	font-size: 23px;
+	color: #ff525d;
+}
+
+.info {
+  padding: 0 60rpx;
+  font-size: 13px;
+  line-height:37rpx;
+	color: rgba(0, 0, 0, 0.27);
+}
+
+.button {
+    margin: 60rpx auto 30rpx auto; 
+    width: 80%;
+}
+
+.btn {
+    background-color: #ff525d;
+    color: #ffffff;
+}
+
+.btn-hover {
+    background-color: #dd1200;
+    opacity: 0.7;
+}
+

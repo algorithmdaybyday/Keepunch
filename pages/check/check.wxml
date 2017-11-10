@@ -1,0 +1,41 @@
+<!--pages/success/success.wxml-->
+<view class="page">
+  <view class="msg">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo}}" open-type="getUserInfo"> 获取头像 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </block>
+    </view>
+    <view class="text-area">
+
+      <block wx:if="{{checked}}">
+        <view class="msg__title">打卡成功</view>
+        <view class="msg__desc">共打卡
+          <span>{{checktime}}</span>次，连续打卡
+          <span>{{longestAttendance}}</span>次</view>
+        <view class="msg__desc">点击头像查看排名</view>
+      </block>
+      <block wx:elif="{{!checked && !checkable}}">
+        <view class="msg__title">打卡关闭中</view>
+        <view class="msg__desc">今日题目还未发布</view>
+      </block>
+      <block wx:else>
+        <text>确认已完成今天的题目</text>
+        <view class="btn-area">
+          <view wx:if="{{imageFile.uploaded}}" class="btn" bindtouchend='checkTap'>长按这里打卡</view>
+          <view wx:else class="btn" bindtap='uploadImage'>请上传AC后的截图</view>
+        </view>
+        <image class="preview" src="{{imageFile.tempFilePath}}" background-size="cover"></image>
+      </block>
+      </view>
+      <view class="extra-area">
+        <view class="footer">
+          <view class="footer__links">
+            <navigator url="" class="footer__link">每日一道算法题</navigator>
+          </view>
+          <view class="footer__text">Copyright © 2017</view>
+        </view>
+      </view>
+    </view>
+  </view>
